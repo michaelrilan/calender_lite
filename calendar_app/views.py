@@ -21,6 +21,7 @@ def index(request):
     print(cnt)
     print(entry_limit)
     statee = ""
+    
     if request.method == 'POST':
         form = mema_form(request.POST)
         if form.is_valid() and cnt<entry_limit and petsa_ngayon != date_time_obj_porma:
@@ -34,3 +35,4 @@ def index(request):
     }
     return render(request, "index.html",context)
 
+#Prvrbs 16:4
